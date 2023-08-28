@@ -27,6 +27,9 @@ public class Bird {
     }
     public void fly()
     {
+        //fly method has 2 reasons to change
+        //1. if any new bird added
+        //2. if any bird change its flying style. Implementation of fly for any bird got change.
         if(this.type.equals(BirdType.EAGLE))
         {
             System.out.println("Eagle is flying");
