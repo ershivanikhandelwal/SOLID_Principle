@@ -1,6 +1,6 @@
 package Single_Responsibility_principle;
 
-public class Bird {
+public abstract class Bird {
     private String name;
     private void setName(String name){
         this.name=name;
@@ -25,32 +25,13 @@ public class Bird {
     private void setSize(BirdSize size){
         this.size=size;
     }
-    public void fly()
-    {
-        //fly method has 2 reasons to change
-        //1. if any new bird added
-        //2. if any bird change its flying style. Implementation of fly for any bird got change.
-        if(this.type.equals(BirdType.EAGLE))
-        {
-            System.out.println("Eagle is flying");
-        }
-        else if(this.type.equals(BirdType.PARROT))
-        {
-            System.out.println("Parrot is flying");
-        }
-        else if(this.type.equals(BirdType.PEACOCK))
-        {
-            System.out.println("Peacock is flying");
-        }
-        else if(this.type.equals(BirdType.DOVE))
-        {
-            System.out.println("Dove is flying");
-        }
-    }
+    public abstract void fly();
+    //common method for all birds
     public void eat()
     {
         System.out.println("I'm Hungry! Let's eat");
     }
+    //common method for all birds
     public void sleep()
     {
         System.out.println("I am tired! Let me sleep");
