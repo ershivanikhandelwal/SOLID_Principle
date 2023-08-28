@@ -25,6 +25,14 @@ public abstract class Bird {
     private void setSize(BirdSize size){
         this.size=size;
     }
+    public Bird(String name, BirdColor color, Double weight,BirdBeak beak, BirdSize size)
+    {
+        this.name=name;
+        this.color=color;
+        this.weight=weight;
+        this.beak=beak;
+        this.size=size;
+    }
     public abstract void fly();
     //common method for all birds
     public void eat()

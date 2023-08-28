@@ -6,7 +6,7 @@ public class Runner {
 
     //Defination- OCP:- A class should open for extension and close for modification
     public static void main(String[] args) {
-        Bird parrot= new ParrotBird();
+        Bird parrot= new ParrotBird("Parrot A", BirdColor.Green, 2.0,BirdBeak.ShortBeak, BirdSize.Medium);
         parrot.fly();
     }
 
