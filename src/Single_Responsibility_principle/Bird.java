@@ -33,7 +33,6 @@ public abstract class Bird {
         this.beak=beak;
         this.size=size;
     }
-    public abstract void fly();
     //common method for all birds
     public void eat()
     {

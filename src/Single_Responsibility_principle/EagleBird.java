@@ -1,6 +1,6 @@
 package Single_Responsibility_principle;
 
-public class EagleBird extends Bird{
+public class EagleBird extends Bird implements Flyable{
     public EagleBird(String name, BirdColor color, Double weight,BirdBeak beak, BirdSize size)
     {
         super(name, color, weight,beak, size);
