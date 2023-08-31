@@ -1,7 +1,7 @@
 package Single_Responsibility_principle;
 
 public class ParrotBird extends Bird implements Flyable{
-    public ParrotBird(String name, BirdColor color, Double weight,BirdBeak beak, BirdSize size)
+    public ParrotBird(String name, BirdColor color, Double weight,Beak beak, BirdSize size)
     {
         super(name, color, weight,beak, size);
     }

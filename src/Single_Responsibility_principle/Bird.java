@@ -17,21 +17,19 @@ public abstract class Bird {
     private void setType(BirdType type){
         this.type=type;
     }
-    private BirdBeak beak;
-    private void setBeak(BirdBeak beak){
-        this.beak=beak;
-    }
+    private Beak beak;
     private BirdSize size;
     private void setSize(BirdSize size){
         this.size=size;
     }
-    public Bird(String name, BirdColor color, Double weight,BirdBeak beak, BirdSize size)
+    public Bird(String name, BirdColor color, Double weight,Beak beak, BirdSize size)
     {
         this.name=name;
         this.color=color;
         this.weight=weight;
         this.beak=beak;
         this.size=size;
+        this.beak.BeakInfo();
     }
     //common method for all birds
     public void eat()
